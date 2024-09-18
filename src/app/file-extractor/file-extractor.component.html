@@ -1,0 +1,10 @@
+<div>
+    <h1>ZIP File Extractor</h1>
+    <input type="file" (change)="onFileChange($event)" />
+    <button (click)="extractFile()">Extract Files</button>
+  
+    <h2>Extracted Files:</h2>
+    <ul>
+      <li *ngFor="let file of extractedFiles">{{ file.name }}</li>
+    </ul>
+  </div>
